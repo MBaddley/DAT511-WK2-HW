@@ -1,0 +1,25 @@
+---
+title: "Weather Forecast Report"
+author: "Michael Baddley"
+date: "2025-09-01"
+output: word_document
+---
+
+# Weather Forecast Report
+## Introduction
+### Data Analysis
+
+
+```{r}
+# Create temperature data for the week
+days <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+temperatures <- c(25, 22, 20, 23, 24)
+```
+
+
+```{r}
+# Plot the temperature data
+barplot(temperatures, names.arg = days, col = "skyblue",
+main = "Weekly Temperature Forecast",
+xlab = "Days", ylab = "Temperature (°C)")
+```
